@@ -14,20 +14,17 @@ At the end of the training, the students should be able to
 - create dynamic effects in the UI by using timers
 - react on user gestures like panning
 - show or hide UI elements after user interaction
-- use external packages e.g. to display charts in a flutter app
+- use external packages e.g. to display gauges and charts in a flutter app
 - visualize zoomable maps in an app and display geografic info like rain radar therein
 - change the display language e.g. from English to German
 - build apk or app bundle files to install Flutter apps on Android devices
 - publish Flutter apps via GitHub pages as Web apps
 
-<br><br>
-During the training I plan to develop the following apps:
-
-- [flying_balls](https://fdg2425.github.io/web/flying_balls/) (gesture detection, timer, show/hide UI elements)
+During the training I plan to develop the following apps:<br>
+- [flying_balls](https://fdg2425.github.io/web/flying_balls/) (timer, gesture detection, show/hide UI elements)
 - [lux_meter](https://fdg2425.github.io/web/fdg_lux_meter/)  (use external packages, switch light & dark theme, use front camera in Android)
 - [open_meteo_ui](https://guentherschmitt.github.io/web_test/open_meteo_ui/) (get weather forecast from Web API, show zoomable maps, change display language)
 
-<br><br>
 Short info about the trainer:
 
 My name is Günther Schmitt, I worked nearly 40 years as software engineer, the last 20 years at Schneider Electric developing Windows apps with C++ and C#. After my retirement in 2021 I wanted to learn writing code for Android. First I used .Net and Microsoft MAUI, but then I came across Flutter and enjoyed working with it. Since 2023 I offer Flutter trainings for young students to share my knowledge and my fun in coding.
