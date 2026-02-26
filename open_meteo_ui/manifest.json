@@ -1,6 +1,6 @@
 {
-    "name": "weather_forecast_chatgpt",
-    "short_name": "weather_forecast_chatgpt",
+    "name": "open_meteo_ui_simplified",
+    "short_name": "open_meteo_ui_simplified",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
