@@ -101429,7 +101429,7 @@ A.t5.prototype={
 ag(){return new A.a1u(new A.aq(25,20,10,10))}}
 A.a1u.prototype={
 L(a){var s=null,r=A.aN("Settings",s,s,s,s,s,s),q=this.e
-return A.F3(A.a5J(s,A.a5K(),s,r),new A.TD(A.e6(A.b([new A.br(q,A.aN("Use light or dark mode for this app?",s,s,s,B.cN,s,s),s),this.a5Q(),new A.br(q,A.aN("Which precipitation radar data should be used?",s,s,s,B.cN,s,s),s),this.a5W(),B.HB,new A.br(q,A.aN("Version: 0.9.0 (Jul-2026)",s,s,s,B.cN,s,s),s)],t.p),B.aW,B.J,B.H,B.a7),s),s)},
+return A.F3(A.a5J(s,A.a5K(),s,r),new A.TD(A.e6(A.b([new A.br(q,A.aN("Use light or dark mode for this app?",s,s,s,B.cN,s,s),s),this.a5Q(),new A.br(q,A.aN("Which precipitation radar data should be used?",s,s,s,B.cN,s,s),s),this.a5W(),B.HB,new A.br(q,A.aN("Version: 0.10.0 (27-Jul-2026)",s,s,s,B.cN,s,s),s)],t.p),B.aW,B.J,B.H,B.a7),s),s)},
 a5Q(){var s=null,r=t.N
 return new A.oE($.eY.av().b,new A.aCK(this),A.e6(A.b([A.S6(A.aN("same as defined in System",s,s,s,B.cN,s,s),"system",r),A.S6(A.aN("always light",s,s,s,B.cN,s,s),"light",r),A.S6(A.aN("always dark",s,s,s,B.cN,s,s),"dark",r)],t.p),B.D,B.J,B.H,B.a7),s,t.eY)},
 a5W(){var s=null,r=t.y
@@ -101621,10 +101621,10 @@ for(;;){if(!(n<o.length&&n<=Math.min(r.f.length,r.w+r.a.e)-1))break
 p.push(new A.cY(n,o[n],q,q));++n}s=r.r!=null&&!c
 return A.aIO(q,3,A.aHH(!1,A.a9(70,b.v()>>>16&255,b.v()>>>8&255,b.v()&255),0,q,s,B.ng),b,0.35,q,new A.nS(!1,A.aGS(),A.aSZ()),B.It,q,!1,!1,!1,!1,B.Kq,!1,10,B.TD,!0,B.pO,p)},
 Pq(a,b){return this.F1(a,b,!1)},
-a5f(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d=A.b([],t.p),c=A.jo("HH",e),b=B.d.j4(a/f.ga2R())+1
-for(s=t.t_,r=0;r<Math.min(f.f.length,f.w+f.a.e)-1;){q=new A.jD(B.c6,B.cy,B.by,A.b([B.l,B.l],s),e,e)
+a5f(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d=A.b([],t.p),c=A.jo("HH",e),b=B.d.j4(a/(f.ga2R()-f.w))+1
+for(s=f.w,r=t.t_;s<Math.min(f.f.length,f.w+f.a.e)-1;){q=new A.jD(B.c6,B.cy,B.by,A.b([B.l,B.l],r),e,e)
 p=$.nl().a
-o=c.fc(p[r].a)
+o=c.fc(p[s].a)
 n=$.a5g()
 m=B.c.Z(n.a,0,2)
 l=B.c.Z(n.b,0,2)
@@ -101634,19 +101634,20 @@ else k=o<m?-1:1
 if(k>0){if(o===l)k=0
 else k=o<l?-1:1
 k=k<0}else k=!1
-if(k)q=new A.jD(B.c6,B.cy,B.by,A.b([B.iq,B.iq],s),e,e)
+if(k)q=new A.jD(B.c6,B.cy,B.by,A.b([B.iq,B.iq],r),e,e)
 if(n)n=0
 else n=o<m?-1:1
-if(n===0)q=new A.jD(B.c6,B.cy,B.by,A.b([B.l,B.iq],s),e,e)
+if(n===0)q=new A.jD(B.c6,B.cy,B.by,A.b([B.l,B.iq],r),e,e)
 if(o===l)n=0
 else n=o<l?-1:1
-if(n===0)q=new A.jD(B.c6,B.cy,B.by,A.b([B.iq,B.l],s),e,e)
-j=a*r/(Math.min(f.f.length,f.w+f.a.e)-1)
+if(n===0)q=new A.jD(B.c6,B.cy,B.by,A.b([B.iq,B.l],r),e,e)
+n=f.w
+j=a*(s-n)/(Math.min(f.f.length,n+f.a.e)-1-n)
 d.push(new A.hw(j,e,e,e,e,e,A.eG(e,e,B.w,e,new A.ds(e,e,e,e,e,q,B.aG),20,e,e,e,b),e))
-i=p[r].e;++r
-h=p[r].e
+i=p[s].e;++s
+h=p[s].e
 g=i!=null?A.a9(B.d.e0(i*200/100),B.au.v()>>>16&255,B.au.v()>>>8&255,B.au.v()&255):A.a9(0,B.au.v()>>>16&255,B.au.v()>>>8&255,B.au.v()&255)
-d.push(new A.hw(j,0,e,e,e,e,A.eG(e,e,B.w,e,new A.ds(e,e,e,e,e,new A.jD(B.c6,B.cy,B.by,A.b([g,h!=null?A.a9(B.d.e0(h*200/100),B.au.v()>>>16&255,B.au.v()>>>8&255,B.au.v()&255):A.a9(0,B.au.v()>>>16&255,B.au.v()>>>8&255,B.au.v()&255)],s),e,e),B.aG),20,e,e,e,b),e))}return d}}
+d.push(new A.hw(j,0,e,e,e,e,A.eG(e,e,B.w,e,new A.ds(e,e,e,e,e,new A.jD(B.c6,B.cy,B.by,A.b([g,h!=null?A.a9(B.d.e0(h*200/100),B.au.v()>>>16&255,B.au.v()>>>8&255,B.au.v()&255):A.a9(0,B.au.v()>>>16&255,B.au.v()>>>8&255,B.au.v()&255)],r),e,e),B.aG),20,e,e,e,b),e))}return d}}
 A.aER.prototype={
 $2(a,b){var s=null
 return A.aN(A.M2(a,this.a,!1)+"\xa0",s,s,s,s,B.cM,s)},
